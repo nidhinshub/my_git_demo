@@ -1,0 +1,12 @@
+[root@client my_git_demo]# git add .
+[root@client my_git_demo]# git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       modified:   foo
+#
+[root@client my_git_demo]# git reset .
+Unstaged changes after reset:
+M       foo
+[root@client my_git_demo]#
