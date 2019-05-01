@@ -10,3 +10,18 @@
 Unstaged changes after reset:
 M       foo
 [root@client my_git_demo]#
+
+==================================================================
+
+[root@client my_git_demo]# echo -n "Line in file1" >> newfile
+[root@client my_git_demo]# git add .
+[root@client my_git_demo]# git commit -m "Added line in newfile"
+[master a5c3066] Added line in newfile
+ 3 files changed, 14 insertions(+), 0 deletions(-)
+ create mode 100644 newfile
+[root@client my_git_demo]# echo -n "Line in file2" >> newfile
+[root@client my_git_demo]# git checkout newfile
+[root@client my_git_demo]# cat newfile
+Line in file1[root@client my_git_demo]#
+
+===================================================================
